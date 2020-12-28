@@ -1,0 +1,154 @@
+.post {
+  background-color: $primary;
+  box-shadow: 0 5px 5px rgba($black, 0.25);
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+}
+
+.post__header {
+  margin: 0 0 2.5rem
+
+  &--preview {
+    margin: -2.5rem -2.5rem 2.5rem;
+  }
+}
+
+.post__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  margin: 0 auto 3rem;
+}
+
+.post__content {
+  margin-bottom: 2rem;
+}
+
+.post__content--additional {
+  border-bottom: 1px solid #1C1C1C;
+  //box-shadow: 0px 4px 4px rgba($black, 0.25);
+}
+
+.post__title {
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 600;
+  line-height: 2.1rem;
+
+  margin: 1.5rem 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    transition: border-bottom 0.2s linear;
+
+    &:hover {
+    border-bottom: 1px $white solid;
+  }
+  }
+}
+
+.post__title-additional {
+  margin-bottom: 0.5rem;
+}
+
+.post__text {
+  font-size: 1.4rem;
+  color: #d2d2d2;
+  font-weight: 400;
+  line-height: 2.1rem;
+  text-align: left;
+}
+
+.post__text-additional {
+  margin-bottom: 3rem;
+
+  text-align: justify;
+  text-indent: 5rem;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #828282;
+}
+
+.post__data {
+  display: flex;
+
+
+  line-height: 1.2;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post__data-additional {
+  margin-bottom: 30px;
+}
+
+.post__data-item {
+
+  &:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    margin: 0 1.2rem;
+    position: relative;
+    top: -2px;
+
+    border-radius: 50%;
+    background-color: #c4c4c4;
+  }
+}
+
+.post__read {
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #107EFF;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: right;
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__actions-item {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: $white;
+  opacity: 0.6;
+  text-shadow: 0px 4px 4px rgba($black, 0.25);
+  text-decoration: none;
+}
+
+.post__actions-icon {
+  margin-left: 0.7rem;
+}

@@ -1,0 +1,38 @@
+.pagenav {
+  display: flex;
+  justify-content: center;
+}
+
+.pagenav__item {
+  width: 40px;
+  height: 40px;
+
+  padding: 1.2rem;
+  margin-right: 1.5rem;
+
+  font-size: 1.4rem;
+  color: $white;
+  font-weight: 500;
+  line-height: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: #0D0D0D;
+  box-shadow: 0 5px 5px rgba($black, 0.25);
+  border-radius: 3px;
+
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #104BE3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.pagenav__arrow {
+  width: 1rem;
+  height: 1rem;
+}
